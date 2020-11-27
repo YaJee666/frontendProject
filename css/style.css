@@ -1,0 +1,216 @@
+
+body {
+  color: #333;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #f2f2f2;
+  height: 120px;
+  padding: 10px 0;
+}
+
+.topWrap {
+  width: 900px;
+}
+
+.topWrap img {
+  width: 650px;
+}
+/* .logo {
+  width: 100px;
+}
+
+.logo img{
+  width: 100px;
+} */
+
+nav {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.lang-menu {
+  margin-top: 25px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 25px;
+  position: relative;
+}
+
+.select-lang {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  width: 100px;
+}
+
+.option {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  width: 100px;
+}
+
+.select-lang:before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://www.countryflags.io/cn/flat/32.png);
+}
+
+.option:before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://www.iconfinder.com/icons/3289576/download/png/32);
+}
+
+
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+
+}
+
+.lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-menu ul li a {
+  width: 140px;
+  display: block;
+  padding: 5px 10px;
+}
+
+.lang-menu ul li a:before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.lang-menu ul li a:hover {
+  background-color: #f2f2f2;
+
+}
+
+.cn:before {
+  background-image: url(https://www.countryflags.io/cn/flat/32.png);
+}
+.us:before {
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.jp:before {
+  background-image: url(https://www.countryflags.io/jp/flat/32.png);
+}
+
+.ac:before {
+  background-image: url(https://www.iconfinder.com/icons/3289576/download/png/32);
+}
+.wa:before {
+  background-image: url(https://www.iconfinder.com/icons/290143/download/png/32);
+}
+.ex:before {
+  background-image: url(https://www.iconfinder.com/icons/326635/download/png/32);
+}
+
+.lang-menu:hover ul {
+  display: block;
+
+}
+
+/* navbar style */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: darksalmon;
+  color: white;
+}
